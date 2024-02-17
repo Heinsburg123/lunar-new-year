@@ -1,8 +1,10 @@
 <script>
+	import Fireworks from "./Fireworks.svelte";
 	import Letter from "./Letter.svelte";
 	var active1=false
 	var active2=false
 	var active3=false
+	$:console.log(active2)
 </script>
 <main>
 	<div>
@@ -24,14 +26,15 @@
 		{#if active1==true}
 			<Letter show='on'></Letter>
 		{/if}
+		{#if active2==true}
+			<Fireworks show='on'></Fireworks>
+		{/if}
 	</div>
-	{
-
-	}
 </main>
 
 <style>
 	main {
+		display:flex;
 		text-align: center;
 		max-width: 240px;
 		margin: 0 auto;
@@ -39,6 +42,8 @@
 		background-repeat: no-repeat;
   		background-attachment: fixed;
   		background-size: cover;
+		flex-direction: column;
+		justify-content: center;
 	}	
 
 	button
