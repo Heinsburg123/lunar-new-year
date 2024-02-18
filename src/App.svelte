@@ -29,6 +29,7 @@
 		{#if active2==true}
 			<Fireworks show='on'></Fireworks>
 		{/if}
+		{#if active1}
 	</div>
 </main>
 
