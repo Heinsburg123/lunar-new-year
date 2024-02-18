@@ -1,10 +1,10 @@
 <script>
 	import Fireworks from "./Fireworks.svelte";
 	import Letter from "./Letter.svelte";
+	import Game from './Game.svelte'
 	var active1=false
 	var active2=false
 	var active3=false
-	$:console.log(active2)
 </script>
 <main>
 	<div>
@@ -29,7 +29,9 @@
 		{#if active2==true}
 			<Fireworks show='on'></Fireworks>
 		{/if}
-		{#if active1}
+		{#if active3==true}
+			<Game show='on'></Game>
+		{/if}
 	</div>
 </main>
 

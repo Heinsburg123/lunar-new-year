@@ -10,7 +10,7 @@
         cv.width=innerWidth
         cv.height=innerHeight
         let delta=534-497
-        draw_random(cv,c,delta)
+        draw_fireworks(cv,c,delta)
     })
 
 </script>
