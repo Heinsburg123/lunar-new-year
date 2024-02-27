@@ -5,6 +5,8 @@
 	var active1=false
 	var active2=false
 	var active3=false
+	document.querySelector('body').style.padding='0'
+
 </script>
 <main>
 	<div>
@@ -36,17 +38,20 @@
 </main>
 
 <style>
+	
 	main {
 		display:flex;
 		text-align: center;
 		max-width: 240px;
 		margin: 0 auto;
-		background-image:url('blob:https://www.facebook.com/bfaa6972-5aed-42de-9601-203ccaed2b4b');
+		background-image:url('https://i.ibb.co/Kxf3xbX/Artboard-1.png');
 		background-repeat: no-repeat;
   		background-attachment: fixed;
   		background-size: cover;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100vh;
 	}	
 
 	button
